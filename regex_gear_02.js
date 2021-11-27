@@ -1,1 +1,1 @@
-//Create a simple test for Regex
+//(1) Create a Regex variable and test it using Regex.test
