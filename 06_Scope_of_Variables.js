@@ -1,4 +1,26 @@
-//(1.0) Find the difference between Global Scope, Var Scope and let scope by using them at different places.
+//(2.0) Find the difference between Global Scope outside and inside function scope.
+name = "outside_var"
+
+function name2(){
+  console.log(`inside function var name is ${name}`); // Now outside name is visible inside function scope
+  name = "inside_var";
+  console.log(`inside function var name is ${name}`);
+return name;
+}
+
+
+name2(); 
+console.log(name); // Function name is visible outside
+
+
+
+
+
+
+
+
+
+//(1.0) Find the difference between Var Scope outside and inside function scope
 var name = "outside_var"
 
 function name2(){
