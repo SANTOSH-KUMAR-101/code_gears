@@ -1,19 +1,18 @@
-// (1.0) Create a function that takes any number of arguments and adds it up
+// (1.0) Create a function that takes any number of arguments and adds it up and returns the value in console
 
 function addingMachine() {
-  let sum = 0;
-  let length = arguments.length;
-  console.log(`Argument length is ${length}`);
+  length = arguments.length;  // Arguments is well known by the function
   if (length == 0) {
     console.log(`Present Sum is 0; Give the machine numbers to add`);
     return;
   }
 
+  let sum = 0;
   for (let i = 0; length > i; i += 1) {
     let number = arguments[i];
     sum += number;
   }
-  console.log(`${sum}`);
+  return(`The sum of ${length} arguments is ${sum}.`);
 }
 
 addingMachine(9, 11, 56);
