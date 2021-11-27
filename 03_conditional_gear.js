@@ -1,4 +1,18 @@
-// (1) Use a switch block to mark down the outcomes of the toss in a match
+// (3) Use ternary operator for resolution of head an toss case
+
+// Sol:-
+  
+function toss(para){
+  
+  para=="head"
+  ? console.log("team India won the toss") //doesnot take return as an executable function
+  : console.log("Team England won the toss");}
+  
+  toss("tail");
+
+
+
+// (2) Use a switch block to mark down the outcomes of the toss in a match
 
 function toss(para = "no toss"){
   
@@ -26,7 +40,8 @@ function toss(para = "no toss"){
 //    toss("no toss");
 //    toss("invalid");
 
-// (2) Cascading effect of Switch Block if no break statement
+// (1) Cascading effect of Switch Block if no break statement
+
 function toss(para = "no toss"){
   
   switch(para){
@@ -50,3 +65,5 @@ function toss(para = "no toss"){
      break;}}
       
   toss("head");
+
+
