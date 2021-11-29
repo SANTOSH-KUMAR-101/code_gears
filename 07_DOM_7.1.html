@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event handler</title>
+        <link rel="stylesheet" href="ajax.css">
+      <style>
+              #flex {       display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            width: 900px;
+                            margin: 0 auto;
+                          }
+
+              .box {
+                      height: 400px;
+                      width: 400px;
+                      background-color: aqua;
+                      padding: 10px;
+                      border: 2px solid black;
+                    }
+      </style>
+    </head>
+    <body>
+        <div id="flex">
+            <!-- Primitive way of adding the Event Registration and followup action -->  
+          <div id="box_1" class="box" onclick="alert('Box 1 clicked')">Box 1</div> 
+            <!-- Primitive way of adding the Event Registration and followup action -->
+            <div id="box_2" class="box">Box 2</div>
+        </div>
+        <script>
+            let box = document.getElementById("box_1").onclick
+        
+        </script>
+    </body>
+    
+</html>
